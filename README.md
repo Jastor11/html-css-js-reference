@@ -286,6 +286,14 @@ p {
 }
 ```
 
+#### Background Image
+
+```css
+body {
+   background: url("http://doughnutkitten.com/PNGs/2017/1-Doughnut-Kitten-by-Tania-Hennessy.png");
+}
+```
+
 #### Font-size
 
 Use the `rem` measurement to define relative sizing. This keeps things like headers large, paragraphs small, but lets you make the whole impression bigger.
@@ -405,7 +413,39 @@ IN THE CSS:
 
 ### Fonts
 
-*coming soon*
+#### Google Fonts
+
+This quick reference uses the Google Fonts API. There are additional ways to load in fonts, but this is one of the simplest and most dynamic.
+
+This example uses PT Sans. Select Whatever font you prefer. Add it to the top of your CSS, whether it's included in a linked file, or embedded in the HTML file.
+
+```css
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+```
+
+Use the font, and declare a fallback font - this can be copied and pasted directly from Google Fonts.
+
+```css
+p {
+  font-family: 'PT Sans', sans-serif;
+}
+```
+
+Take this moment to talk about a few different ways to alter font size as well using different [CSS measurements](https://css-tricks.com/the-lengths-of-css/). Encourage students to play with pt, px, vh, and percentages.
+
+```css
+p {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 2rem;
+}
+```
+
+#### Resources
+
+* [fontpair](http://fontpair.co/)
+* [typ.io](http://typ.io/)
+* [CSS Tricks - Units of Measurement](https://css-tricks.com/the-lengths-of-css/)
+
 
 ### Troubleshooting CSS
 
